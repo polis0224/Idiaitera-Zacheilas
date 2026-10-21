@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 3</title>
+    <style> /* INTERNAL CSS = ΕΣΩΤΕΡΙΚΗ CSS */
+        table,th ,td {
+            border:1px solid black;
+            border-collapse: collapse; /* ΕΝΩΝΕΙ ΤΙΣ ΓΡΑΜΜΕΣ */
+            /* περιγραμμα: 1px Παχος ευθεια γραμμη χρωμα μαυρο */
+        }
+
+        /*
+
+        th
+        {
+            border:1px solid black;
+            περιγραμμα: 1px Παχος ευθεια γραμμη χρωμα μαυρο
+        }
+
+        td
+        {
+            border:1px solid black;
+            περιγραμμα: 1px Παχος ευθεια γραμμη χρωμα μαυρο
+        }
+
+        */
+
+    </style>
+</head>
+<body>
+    <a href="example4.html">Example 4</a>
+    <table > <!-- border="1" -->
+        <tr> <!-- table row-->
+            <th>Id</th> <!-- Table Heading-->
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td> 1</td> <!-- table data-->
+            <td>Ioannis</td>
+            <td rowspan="2">33</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Panagiotis</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td colspan="2">Petros 35</td>
+        </tr>
+    </table>
+
+    <!-- ΔΕΥΤΕΡΟ ΤΡΟΠΟΣ -->
+
+    <hr>
+    <br>
+    <hr>
+    <table > <!-- border="1" -->
+        <caption> TABLE 2</caption>
+        <thead>
+            <tr> <!-- table row-->
+                <th>Id</th> <!-- Table Heading-->
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> 1</td> <!-- table data-->
+                <td>Ioannis</td>
+                <td rowspan="2">33</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Panagiotis</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Petros 35</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
